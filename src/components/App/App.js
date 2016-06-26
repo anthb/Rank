@@ -12,6 +12,7 @@ import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.css';
 import Header from '../Header';
 import RankingList from '../RankingList';
+import GameForm from '../GameForm';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
 
@@ -55,6 +56,7 @@ class App extends Component {
     return !this.props.error ? (
       <div>
         <Header />
+        <GameForm />
         <RankingList />
         {this.props.children}
         <Feedback />
